@@ -19,19 +19,20 @@
 <script>
  $(document).ready(function() {
   path = window.location.pathname;
-  currentLink = $('a[href$="' + path + '"]');
+  currentLink = $('nav a[href$="' + path + '"]');
 
   console.log(currentLink)
 
   if (currentLink[0]) {
+    // add active to current page
+    console.log('// add active to current page')
     currentLink.addClass('active');
-    console.log('if')
   } else {
+    // add active to work
+    console.log('// add active to work')
     $('a[href$="/lee_williams_portfolio"]').addClass('active')
     console.log('else')
   }
-
-
 
  })
 </script>
