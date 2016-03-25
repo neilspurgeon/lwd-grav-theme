@@ -1,11 +1,9 @@
 {% extends 'partials/base.html.twig' %}
 
   {% block content %}
-  <div class="project-container">
+  <div class="project-container info-container">
 
     <div class="project-info">
-      <h1 class="client">{{ page.header.client }}</h1>
-      <h2 class="title">{{ page.title }}</h2>
       {{ page.content }}
       
       {% if page.header.related_work %}
