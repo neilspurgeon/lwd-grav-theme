@@ -69,11 +69,11 @@
   padding-bottom: 100%;
   @media (min-width: $md-break) {
     width: calc(50% - 20px);
-    padding-bottom: 50%;
+    padding-bottom: 75%;
   }
   @media (min-width: $lg-break) {
     width: calc(20% - 20px);
-    padding-bottom: 20%;
+    padding-bottom: 30%;
   }
 }
 
