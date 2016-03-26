@@ -3,8 +3,6 @@ backup/*
 !backup/.*
 cache/*
 !cache/.*
-assets/*
-!assets/.*
 logs/*
 !logs/.*
 user/accounts/*
