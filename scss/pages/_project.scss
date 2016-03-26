@@ -29,8 +29,9 @@
   // position: relative;
   display: flex;
   a { margin-right: $gutter-width; }
+  a:last-child { margin-right: 0px; }
   .images {
-    div:last-child { margin-right: 0px; }
+    a:last-child { margin-right: 0px; }
   }
   img {
     width: 100%;
