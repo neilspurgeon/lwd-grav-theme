@@ -61,9 +61,9 @@
   display: none;
   @media (min-width: $lg-break) {
     display: inline-block;
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
+    position: fixed;
+    bottom: 8vh;
+    left: calc(20vw + 55px);
     a {
       color: #FFF;
       margin-right: 1em;
