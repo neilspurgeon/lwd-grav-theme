@@ -57,9 +57,10 @@
   @media (min-width: $lg-break) {
     display: inline-block;
     position: fixed;
-    bottom: 6.5vh;
-    left: 20px;
+    bottom: 8vh;
+    left: 24vw;
     a {
+      color: #FFF;
       margin-right: 1em;
       opacity: .5;
     }
