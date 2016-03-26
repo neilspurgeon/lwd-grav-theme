@@ -1,14 +1,3 @@
-# Composer
-.composer
-vendor/
-
-# Sass
-.sass-cache
-.sass-cache/*
-css/*
-!css/.*
-css
-
 # Grav Specific
 backup/*
 !backup/.*
@@ -18,8 +7,6 @@ assets/*
 !assets/.*
 logs/*
 !logs/.*
-images/*
-!images/.*
 user/accounts/*
 !user/accounts/.*
 user/localhost/config/security.yaml
