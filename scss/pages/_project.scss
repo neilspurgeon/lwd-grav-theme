@@ -28,8 +28,15 @@
 .horizontal-scroll {
   position: relative;
   display: flex;
+
+  // if lightbox is on img's are wrapped in a tag
+  a { margin-right: $gutter-width; }
+  a:last-child { margin-right: 0px; }
+  
+  // if lightbox is off just target img
   img { margin-right: $gutter-width; }
   img:last-child { margin-right: 0px; }
+
   img {
     width: 100%;
     margin-bottom: 15px;
