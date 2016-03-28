@@ -44,6 +44,16 @@
   }
 }
 
+.right-nav {
+  a h2 {
+    transition: .3s ease;
+    border-bottom: 1.6px solid rgba($primary-color, 0);
+  }
+  a:hover h2 {
+    border-bottom: 1.6px solid $primary-color;
+  }
+}
+
 .nav-bg {
   z-index: 999;
   background-color: $background-color;
