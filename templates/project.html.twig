@@ -6,6 +6,8 @@
     <div class="project-info">
       <h1 class="client">{{ page.header.client }}</h1>
       <h2 class="title">{{ page.title }}</h2>
+
+      {{ page.header.description | markdown   }}
       
       
       {% if page.header.related_work %}
@@ -20,12 +22,12 @@
     </div>
     
     <div class="horizontal-scroll">
-      {#% set img_count = 0 %#}
+      {% set img_count = 0 %}
 
       <section class="images">
         {{ page.content }}
 
-        
+
         {#{% for image in page.media.images %}
           <!-- Eclude thumbnail -->
           {% if image.filename != 'thumbnail.jpg' and image.filename != 'thumbnail.jpeg' and image.filename != 'thumbnail.png' %}        
@@ -53,9 +55,9 @@
       </section>
 
       <div class="pagination">
-        {% for i in 1.. img_count %}
+        {#% for i in 1.. img_count %}
           <a href="{{ '#image-' ~ i }}">{{ i }}</a>
-        {% endfor %}
+        {% endfor %#}
       </div>
 
     </div>

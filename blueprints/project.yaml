@@ -9,6 +9,10 @@ form:
       type: input
       label: Enter client
       required: false
+    header.description:
+      type: textarea
+      label: Enter description
+      required: false
     header.thumbnail:
       type: PageMediaSelect
       label: Select thumbnail
