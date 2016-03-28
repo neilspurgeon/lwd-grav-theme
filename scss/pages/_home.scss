@@ -73,13 +73,22 @@
 .sm-portrait {
   width: 100%;
   padding-bottom: 100%;
+  img {
+    object-position: top;
+  } 
   @media (min-width: $md-break) {
     width: calc(50% - 20px);
     padding-bottom: 75%;
+    img {
+      object-position: center;
+    }
   }
   @media (min-width: $lg-break) {
     width: calc(20% - 20px);
     padding-bottom: 30%;
+    img {
+      object-position: center;
+    }
   }
 }
 
