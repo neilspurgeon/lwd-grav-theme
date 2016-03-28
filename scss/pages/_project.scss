@@ -28,11 +28,8 @@
 .horizontal-scroll {
   position: relative;
   display: flex;
-  a { margin-right: $gutter-width; }
-  a:last-child { margin-right: 0px; }
-  .images {
-    a:last-child { margin-right: 0px; }
-  }
+  img { margin-right: $gutter-width; }
+  img:last-child { margin-right: 0px; }
   img {
     width: 100%;
     margin-bottom: 15px;
