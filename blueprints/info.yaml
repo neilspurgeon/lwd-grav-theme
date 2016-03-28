@@ -1,0 +1,11 @@
+title: Info
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    header.description:
+      type: textarea
+      label: Enter about text
+      required: false
