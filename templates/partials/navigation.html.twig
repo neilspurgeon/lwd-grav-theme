@@ -21,17 +21,12 @@
   path = window.location.pathname;
   currentLink = $('nav a[href$="' + path + '"]');
 
-  console.log(currentLink)
-
   if (currentLink[0]) {
     // add active to current page
-    console.log('// add active to current page')
     currentLink.addClass('active');
   } else {
     // add active to work
-    console.log('// add active to work')
-    $('a[href$="/lee_williams_portfolio"]').addClass('active')
-    console.log('else')
+    $('.right-nav a[href$="/"]').addClass('active')
   }
 
  })

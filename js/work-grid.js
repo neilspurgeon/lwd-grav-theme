@@ -8,7 +8,6 @@ $(document).ready(function() {
   if (imgs[0]) {
     // hide loading content
     preloadedContent.css('visibility', 'hidden');
-    console.log('loading...');
     $('body').append('<img id="loading-icon" style="position: fixed; top: 40%; z-index: 99999; left: 50%; width: 60px; margin-left: -30px;" src="/user/themes/lwd/images/loading-icon.svg"/>');
 
     // load each image
@@ -22,10 +21,11 @@ $(document).ready(function() {
       }
     });
   }
-    $('.work-grid').packery({
-      itemSelector: '.grid-item',
-      gutter: 20,
-      transitionDuration: '0'
-    });
+
+  $('.work-grid').packery({
+    itemSelector: '.grid-item',
+    gutter: 20,
+    transitionDuration: '0'
+  });
 });
 

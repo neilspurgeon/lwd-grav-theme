@@ -4,27 +4,37 @@
   <div class="project-container">
 
     <div class="project-info">
-      <h1 class="client">{{ page.header.client }}</h1>
-      <h2 class="title">{{ page.title }}</h2>
+      <div class="footer-push">
+        <h1 class="client">{{ page.header.client }}</h1>
+        <h2 class="title">{{ page.title }}</h2>
 
-      {{ page.header.description | markdown   }}
-      
-      
-      {% if page.header.related_work %}
-        <ul>
-          <h3>Related Work</h3>
-          {% for p in page.header.related_work %}
-            <li><a href="{{ base_url ~ p.url }}">{{ p.title }}</a></li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    
+        {{ page.header.description | markdown   }}
+        
+        
+        {% if page.header.related_work %}
+          <ul>
+            <h3>Related Work</h3>
+            {% for p in page.header.related_work %}
+              <li><a href="{{ base_url ~ p.url }}">{{ p.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+
+      <footer class="lg-footer">
+        <p>
+          <a href="mailto:hello@itsleewilliams.com">hello@itsleewilliams.com</a><br />
+          © Lee Williams 2016<br />
+          Developed by <a href="http://neilspurgeon.com/">Neil Spurgeon</a>
+        </p>
+      </footer>
+
     </div>
     
     <div class="horizontal-scroll">
       {#% set img_count = 0 %#}
 
-      <section class="images">
+      <section class="images">  
         {{ page.content }}
 
 
@@ -61,6 +71,14 @@
       </div>
 
     </div>
+
+    <footer class="sm-footer">
+      <p>
+        <a href="mailto:hello@itsleewilliams.com">hello@itsleewilliams.com</a><br />
+        © Lee Williams 2016<br />
+        Developed by <a href="http://neilspurgeon.com/">Neil Spurgeon</a>
+      </p>
+    </footer>
 
 
 </div>
