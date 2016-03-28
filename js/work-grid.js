@@ -17,7 +17,8 @@ $(document).ready(function() {
       // On last img show content
       if (imgCount === 0) {
         $('#loading-icon').hide();
-        preloadedContent.css({'visibility': 'initial', 'transition': '.5s ease'});
+        preloadedContent.css({'visibility': 'initial', 'opacity': '0', 'transition': '.5s ease'});
+        preloadedContent.css({'opacity': '1'});
       }
     });
   }
