@@ -62,7 +62,7 @@
 
     /* styling */
     background: #fff;
-    cursor: auto;
+    cursor: url(../images/r-arrow.svg), auto;
 
     /* reset white-space wrapping */
     white-space: normal;
@@ -128,5 +128,27 @@
 
 .featherlight-previous, 
 .featherlight-next {
-  display: none;
+  position: fixed;
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+  background: none;
+
+  // hide content
+  // We should find a better way of doing this when we have time
+  // by actually remove the html or better yet, never adding the html
+  opacity: 0;
+
 }
+
+.featherlight-previous {
+  left: 0;
+  cursor: url(../images/l-arrow.svg), auto;
+}
+
+.featherlight-next {
+  left: 50%;
+  cursor: url(../images/r-arrow.svg), auto;
+}
+
+
