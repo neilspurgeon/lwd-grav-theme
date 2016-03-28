@@ -4,39 +4,20 @@
   <div class="project-container info-container">
 
     <div class="project-info">
-      {{ page.content }}
-      
-      {% if page.header.related_work %}
-        <ul>
-          <h3>Related Work</h3>
-          {% for p in page.header.related_work %}
-            <li><a class="styled-link" href="{{ base_url ~ p.url }}">{{ p.title }}</a></li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    
+      {{ page.header.description | markdown }} 
     </div>
     
     <div class="horizontal-scroll">
-      {% set img_count = 0 %}
 
       <section class="images">
-        {% for image in page.media.images %}
-          {% set img_count = img_count + 1 %}
-          <a class="project-img" id="{{ 'image-' ~ img_count }}" rel="lightbox" href="{{ image.url }}">
-              {{ image.html() }}
-          </a>
-        {% endfor %}
+        {{ page.content }}
       </section>
-
-      <div class="pagination">
-        {% for i in 1.. img_count %}
-          <a href="{{ '#image-' ~ i }}">{{ i }}</a>
-        {% endfor %}
-      </div>
 
     </div>
 
-
 </div>
   {% endblock %}
+
+
+
+
