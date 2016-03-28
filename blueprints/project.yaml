@@ -13,9 +13,13 @@ form:
       type: textarea
       label: Enter description
       required: false
-    header.thumbnail:
+    header.thumbnail.sm:
       type: PageMediaSelect
-      label: Select thumbnail
+      label: Set Small thumbnail
+      required: true
+    header.thumbnail.lg:
+      type: PageMediaSelect
+      label: Set Large thumbnail
       required: true
     header.thumbnail_size:
       type: select

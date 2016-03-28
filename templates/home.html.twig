@@ -15,8 +15,21 @@
 
           <div class="grid-item {{ p.header.thumbnail_size }}" >
 
-            <img src="{{ p.url ~ '/' ~ thumbnail }}">        
-            
+            {% if p.header.thumbnail_size == 'sm-portrait' %}
+              <img src="{{ p.url ~ '/' ~ thumbnail.sm }}" sizes="100vw, (min-width: 600px) 50vw, (min-width: 1000px) 20vw"
+                srcset="{{ p.url ~ '/' ~ thumbnail.sm}} 400w, {{ p.url ~ '/' ~ thumbnail.lg}} 800w">        
+            {% endif %}
+
+            {% if p.header.thumbnail_size == 'sm-landscape' %}
+              <img src="{{ p.url ~ '/' ~ thumbnail.sm }}" sizes="100vw, (min-width: 600px) 50vw, (min-width: 1000px) 20vw"
+              srcset="{{ p.url ~ '/' ~ thumbnail.sm}} 400w, {{ p.url ~ '/' ~ thumbnail.lg}} 800w"> 
+            {% endif %}
+
+            {% if p.header.thumbnail_size == 'lg-landscape' %}
+              <img src="{{ p.url ~ '/' ~ thumbnail.sm }}" sizes="100vw, (min-width: 600px) 50vw, (min-width: 1000px) 40vw"
+              srcset="{{ p.url ~ '/' ~ thumbnail.sm}} 400w, {{ p.url ~ '/' ~ thumbnail.lg}} 800w">        
+            {% endif %}
+
             <div class="grid-project-title">
               <span class="client">{{ p.header.client }}</span>
               <span class="title">{{ p.title }}</span>
