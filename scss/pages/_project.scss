@@ -1,6 +1,6 @@
 .project-info {
   width: 100%;
-  @media (min-width: $lg-break) {
+  @media screen and (min-width: $lg-break) {
     width: $sidebar-width;
     position: fixed;
     height: calc(93vh - 5em);
@@ -46,7 +46,7 @@ footer.lg-footer {
   }
 }
 
-@media (min-width: $lg-break) {
+@media screen and (min-width: $lg-break) {
   footer.sm-footer {
     display: none;
   }
@@ -77,7 +77,7 @@ footer.lg-footer {
     margin-bottom: 15px;
   }
 
-  @media (min-width: $lg-break) {
+  @media screen and (min-width: $lg-break) {
     margin-left: calc( #{$sidebar-width} + #{$gutter-width} );
     overflow: scroll;
     white-space: nowrap;
@@ -99,7 +99,7 @@ footer.lg-footer {
 
 .pagination {
   display: none;
-  @media (min-width: $lg-break) {
+  @media screen and (min-width: $lg-break) {
     display: inline-block;
     position: fixed;
     bottom: 8vh;
