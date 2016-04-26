@@ -10,7 +10,8 @@
   .left-nav, .right-nav {
     display: inline-block;
   }
-  h1.site-title {
+  h1,
+  .site-title {
     font-size: 1.6rem;
   }
   li {
@@ -24,22 +25,22 @@
     border-bottom: 1.6px solid $primary-color;
   }
   @media (max-width: 400px) {
-    h1.site-title {
-      font-size: 1.3rem;
-    }
-    h1, h2 {
-      font-size: 80%; 
+    h1,
+    h2,
+    .site-title {
+      // font-size: 95%;
     }
     ul.right-nav {
       padding: 0;
     }
   }
-  @media (max-width: 300px) {
-    h1.site-title {
-      font-size: 1rem;
+  @media screen and (max-width: 320px) {
+    h1,
+    .site-title {
+      font-size: 1.1rem;
     }
     h2 {
-      font-size: .7rem;
+      font-size: .9rem;
     }
   }
 }
