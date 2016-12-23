@@ -7,27 +7,24 @@
     <div class="work-grid">
       {% for p in page.find('/work').children %}
         <a href="{{ p.url }}">
-          
-          {% set thumbnail = p.header.thumbnail %}
 
-          
-          {# <div class="grid-item {{ p.header.thumbnail_size }}" style="background-image:url('{{ p.url ~ '/' ~ thumbnail }}')"> #}
+          {% set thumbnail = p.header.thumbnail %}
 
           <div class="grid-item {{ p.header.thumbnail_size }}" >
 
             {% if p.header.thumbnail_size == 'sm-portrait' %}
               <img src="{{ p.url ~ '/' ~ thumbnail.sm }}" sizes="100vw, (min-width: 600px) 50vw, (min-width: 1000px) 20vw"
-                srcset="{{ p.url ~ '/' ~ thumbnail.sm}} 400w, {{ p.url ~ '/' ~ thumbnail.lg}} 800w">        
+                srcset="{{ p.url ~ '/' ~ thumbnail.sm}} 400w, {{ p.url ~ '/' ~ thumbnail.lg}} 800w">
             {% endif %}
 
             {% if p.header.thumbnail_size == 'sm-landscape' %}
               <img src="{{ p.url ~ '/' ~ thumbnail.sm }}" sizes="100vw, (min-width: 600px) 50vw, (min-width: 1000px) 20vw"
-              srcset="{{ p.url ~ '/' ~ thumbnail.sm}} 400w, {{ p.url ~ '/' ~ thumbnail.lg}} 800w"> 
+              srcset="{{ p.url ~ '/' ~ thumbnail.sm}} 400w, {{ p.url ~ '/' ~ thumbnail.lg}} 800w">
             {% endif %}
 
             {% if p.header.thumbnail_size == 'lg-landscape' %}
               <img src="{{ p.url ~ '/' ~ thumbnail.sm }}" sizes="100vw, (min-width: 600px) 50vw, (min-width: 1000px) 40vw"
-              srcset="{{ p.url ~ '/' ~ thumbnail.sm}} 400w, {{ p.url ~ '/' ~ thumbnail.lg}} 800w">        
+              srcset="{{ p.url ~ '/' ~ thumbnail.sm}} 400w, {{ p.url ~ '/' ~ thumbnail.lg}} 800w">
             {% endif %}
 
             <div class="grid-project-title">
@@ -35,7 +32,7 @@
               <span class="title">{{ p.title }}</span>
             </div>
           </div>
-          
+
         </a>
       {% endfor %}
     </div>
