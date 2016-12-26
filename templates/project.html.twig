@@ -33,7 +33,8 @@
     <div class="horizontal-scroll">
 
       <section class="images">
-        {{ page.content }}
+        {% for img in page.header.images %}
+        {% endfor %}
       </section>
 
     </div>

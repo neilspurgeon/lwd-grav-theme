@@ -41,3 +41,12 @@ form:
         .title:
           type: input
           label: Enter title
+
+    header.images:
+      name: images
+      type: list
+      label: Images
+
+      fields:
+        .image:
+          type: PageMediaSelect
