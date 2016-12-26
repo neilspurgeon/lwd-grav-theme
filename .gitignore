@@ -3,6 +3,7 @@ backup/*
 !backup/.*
 cache/*
 !cache/.*
+.sass-cache
 logs/*
 !logs/.*
 user/accounts/*
